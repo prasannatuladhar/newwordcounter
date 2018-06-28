@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Counter</title>
+</head>
+<body>
+<h3>There are {{counter}} number of words</h3>
+<h3>Your text is:</h3>
+{{ textarea }}
+<h3>Count:</h3>
+{% for ke,val in words %}
+{{ ke }} : {{ val }}
+    <br>
+
+{% endfor %}
+
+<br>
+<a href="{% url "homee" %}"><button>Back</button></a>
+</body>
+</html>
